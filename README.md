@@ -1,20 +1,31 @@
-# Quartz v4
+This example is to demonstrate quartz transclusion of notes
 
-> “[One] who works with the door open gets all kinds of interruptions, but [they] also occasionally gets clues as to what the world is and what might be important.” — Richard Hamming
+```
+![[note_with_underscores]]
+![[note.with.dots]]
+```
 
-Quartz is a set of tools that helps you publish your [digital garden](https://jzhao.xyz/posts/networked-thought) and notes as a website for free.
-Quartz v4 features a from-the-ground rewrite focusing on end-user extensibility and ease-of-use.
+Is not working when note has dots within their name. 
 
-**If you are looking for Quartz v3, you can find it on the [`hugo` branch](https://github.com/jackyzha0/quartz/tree/hugo).**
+Use build 
+```
+./build_run.sh
+```
 
-🔗 Read the documentation and get started: https://quartz.jzhao.xyz/
+Script to run build and serve the example.
 
-[Join the Discord Community](https://discord.gg/cRFFHYye7t)
+In example index file there are two transclusion examples
 
-## Sponsors
+```
+#### Transclusion does not work (when dots are part of note name)
+![[note.with.dots]]
 
-<p align="center">
-  <a href="https://github.com/sponsors/jackyzha0">
-    <img src="https://cdn.jsdelivr.net/gh/jackyzha0/jackyzha0/sponsorkit/sponsors.svg" />
-  </a>
-</p>
+#### Transclusion works.
+![[note_with_underscores]]
+```
+
+Dots are very common for users of `Dendron` to signify hierarchies. 
+
+
+
+
